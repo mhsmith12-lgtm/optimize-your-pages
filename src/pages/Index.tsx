@@ -31,7 +31,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6">
-              <p className="text-blue-100 text-sm font-medium mb-2">Presented by Medicare Advisors USA</p>
+              <p className="text-blue-100 text-sm font-medium mb-2">Presented by Guardian Health & Wealth</p>
               <div className="flex items-center justify-center gap-2 text-blue-200 text-sm">
                 <Shield className="w-4 h-4" />
                 <span>Expert-led • No sales pitch • 100% educational</span>
@@ -49,8 +49,8 @@ const Index = () => {
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8 max-w-2xl mx-auto">
-              <h2 className="text-lg font-semibold mb-4">You're Not Alone — 1000s Confused by Medicare</h2>
-              <p className="text-blue-100 mb-4">Learn How to Choose with Confidence</p>
+              <h2 className="text-lg font-semibold mb-4">Medicare Doesn't Have to Be Confusing — Learn How to Make the Right Choice with Confidence</h2>
+              <p className="text-blue-100 mb-4">Join 1,000+ people turning 65 who've used this free workshop to avoid costly mistakes and feel confident about their Medicare choices.</p>
               <Button 
                 onClick={scrollToForm}
                 variant="cta" 

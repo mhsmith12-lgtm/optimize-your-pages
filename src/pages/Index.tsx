@@ -30,6 +30,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6">
               <p className="text-blue-100 text-sm font-medium mb-2">Presented by Guardian Health & Wealth</p>
+              <p className="text-blue-100 text-sm mb-3">Presented by Medicare Educator Michael Smith, who's helped 1,000+ people choose the right plan.</p>
               <div className="flex items-center justify-center gap-2 text-blue-200 text-sm">
                 <Shield className="w-4 h-4" />
                 <span>Expert-led • No sales pitch • 100% educational</span>

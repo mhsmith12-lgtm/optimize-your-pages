@@ -214,7 +214,7 @@ const Index = () => {
                   <CheckCircle className="w-8 h-8 text-success" />
                 </div>
                 <h3 className="font-semibold mb-2">Avoid Common Mistakes</h3>
-                <p className="text-sm text-muted-foreground">Learn the top 5 costly errors people make</p>
+                <p className="text-sm text-muted-foreground">Discover the #1 pitfall people encounter when turning 65 and how to avoid it.</p>
               </CardContent>
             </Card>
             

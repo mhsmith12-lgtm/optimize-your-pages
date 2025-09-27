@@ -1,22 +1,26 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 
 export const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Dorothy M.",
-      quote: "This workshop saved me from making a $3,000 mistake! Michael explained everything so clearly.",
+      quote: "This webinar saved me from making a $3,000 mistake! Michael explained everything so clearly.",
       rating: 5,
+      image: "/placeholder-testimonial-1.jpg" // Replace with actual image
     },
     {
       name: "Robert K.",
-      quote: "I was completely lost with Medicare until I attended this workshop. Now I feel confident about my choice.",
+      quote: "I was completely lost with Medicare until I attended this webinar. Now I feel confident about my choice.",
       rating: 5,
+      image: "/placeholder-testimonial-2.jpg" // Replace with actual image
     },
     {
       name: "Susan L.",
       quote: "No pressure, just helpful information. I finally understand what Medicare covers and what it doesn't.",
       rating: 5,
+      image: "/placeholder-testimonial-3.jpg" // Replace with actual image
     },
   ];
 
@@ -34,10 +38,17 @@ export const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-white/10 border-white/20 backdrop-blur-sm">
               <CardContent className="p-6">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
+                <div className="flex items-center gap-3 mb-4">
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.name}
+                    className="w-10 h-10 rounded-full object-cover"
+                  />
+                  <div className="flex items-center gap-1">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
                 </div>
                 <blockquote className="text-white/90 mb-4 text-sm leading-relaxed">
                   "{testimonial.quote}"
@@ -49,9 +60,16 @@ export const TestimonialsSection = () => {
         </div>
         
         <div className="text-center mt-8">
-          <p className="text-blue-100 text-sm">
-            ⭐⭐⭐⭐⭐ Trusted by 1,000+ people who've attended this workshop
+          <p className="text-blue-100 text-sm mb-6">
+            ⭐⭐⭐⭐⭐ Trusted by 1,000+ people who've attended this webinar
           </p>
+          <Button 
+            variant="cta" 
+            size="lg"
+            className="bg-white text-primary hover:bg-white/90"
+          >
+            Save My Seat - It's FREE
+          </Button>
         </div>
       </div>
     </section>

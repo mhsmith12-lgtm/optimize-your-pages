@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { RegistrationForm } from "@/components/RegistrationForm";
+import { SimpleRegistrationForm } from "@/components/SimpleRegistrationForm";
 import { StickyCtaButton } from "@/components/StickyCtaButton";
+import { MobileStickyBar } from "@/components/MobileStickyBar";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
 import { TrustSection } from "@/components/TrustSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
@@ -23,6 +24,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <StickyCtaButton onClick={scrollToForm} />
+      <MobileStickyBar onClick={scrollToForm} />
       
       {/* Hero Section */}
       <header className="bg-gradient-hero text-white py-16 md:py-24">
@@ -60,14 +62,10 @@ const Index = () => {
               </Button>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto text-sm">
-              <div className="flex items-center justify-center gap-2">
-                <Clock className="w-4 h-4" />
-                <span>60-minute workshop</span>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-xl mx-auto text-sm">
               <div className="flex items-center justify-center gap-2">
                 <Users className="w-4 h-4" />
-                <span>Limited to 50 people</span>
+                <span>Seating is limited</span>
               </div>
               <div className="flex items-center justify-center gap-2">
                 <Video className="w-4 h-4" />
@@ -109,11 +107,11 @@ const Index = () => {
             </p>
             <div className="flex items-center justify-center gap-2 text-warning text-sm font-medium">
               <AlertTriangle className="w-4 h-4" />
-              <span>Only 12 spots left for this week's session!</span>
+              <span>Seating is limited!</span>
             </div>
           </div>
           
-          <RegistrationForm />
+          <SimpleRegistrationForm />
         </div>
       </section>
 
@@ -135,7 +133,7 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <CheckCircle className="w-12 h-12 text-success mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Expert-Led</h3>
-                <p className="text-muted-foreground">Learn from a Medicare specialist with 10+ years experience</p>
+                <p className="text-muted-foreground">Learn from a Medicare broker with 10+ years experience</p>
               </CardContent>
             </Card>
             
@@ -227,8 +225,8 @@ const Index = () => {
                     <Video className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Live 60-Minute Workshop</h3>
-                    <p className="text-muted-foreground">Interactive session with live Q&A and expert guidance</p>
+                    <h3 className="font-semibold text-lg mb-2">30-45 Minute Webinar</h3>
+                    <p className="text-muted-foreground">Comprehensive session with expert guidance</p>
                   </div>
                 </CardContent>
               </Card>
@@ -248,11 +246,11 @@ const Index = () => {
               <Card className="bg-white shadow-card">
                 <CardContent className="p-6 flex items-start gap-4">
                   <div className="w-12 h-12 bg-warning/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <MessageCircle className="w-6 h-6 text-warning" />
+                    <CheckCircle className="w-6 h-6 text-warning" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Expert Q&A Session</h3>
-                    <p className="text-muted-foreground">Get your specific questions answered by our Medicare expert</p>
+                    <h3 className="font-semibold text-lg mb-2">Action Plan</h3>
+                    <p className="text-muted-foreground">Clear next steps to choose your Medicare plan with confidence</p>
                   </div>
                 </CardContent>
               </Card>
@@ -266,7 +264,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Meet Your Medicare Expert
+              Meet Your Medicare Broker
             </h2>
             
             <Card className="bg-white shadow-card">
@@ -281,7 +279,7 @@ const Index = () => {
                   </div>
                   <div className="text-center md:text-left">
                     <h3 className="text-2xl font-bold mb-2">Michael Smith</h3>
-                    <p className="text-primary font-semibold mb-4">Licensed Medicare Specialist</p>
+                    <p className="text-primary font-semibold mb-4">Licensed Medicare Broker</p>
                     <p className="text-muted-foreground leading-relaxed mb-4">
                       With over 10 years of experience helping thousands of people navigate Medicare, 
                       Michael has simplified the complex world of Medicare into easy-to-understand guidance. 
@@ -290,7 +288,7 @@ const Index = () => {
                     <div className="flex items-center justify-center md:justify-start gap-4 text-sm text-muted-foreground">
                       <span>📜 Licensed Professional</span>
                       <span>👥 Helped 1,000+ Clients</span>
-                      <span>⭐ 4.9/5 Rating</span>
+                      <span>⭐ 5 Star Rated</span>
                     </div>
                   </div>
                 </div>
@@ -376,9 +374,9 @@ const Index = () => {
               </AccordionItem>
               
               <AccordionItem value="item-5">
-                <AccordionTrigger>How long is the workshop?</AccordionTrigger>
+                <AccordionTrigger>How long is the webinar?</AccordionTrigger>
                 <AccordionContent>
-                  The workshop runs for 60 minutes, including time for Q&A. We respect your time and keep things focused and actionable.
+                  The webinar runs for 30-45 minutes. We respect your time and keep things focused and actionable.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -410,7 +408,7 @@ const Index = () => {
             onClick={scrollToForm}
             variant="cta" 
             size="xl"
-            className="bg-white text-primary hover:bg-white/90"
+            className="w-full md:w-auto min-h-14 text-lg md:text-xl px-8 md:px-12"
           >
             Reserve Your Seat Now - Don't Risk Mistakes
           </Button>

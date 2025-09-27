@@ -38,7 +38,7 @@ const Index = () => {
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               MEDICARE BREAKDOWN:
-              <span className="block text-3xl md:text-5xl font-normal mt-2">Go from Overwhelmed to Confident — Get the Medicare Plan That's Right for You</span>
+              <span className="block text-3xl md:text-5xl font-normal mt-2">Go from Overwhelmed to Confident</span>
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">

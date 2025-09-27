@@ -9,7 +9,7 @@ import { BeforeAfterSection } from "@/components/BeforeAfterSection";
 import { TrustSection } from "@/components/TrustSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { Clock, Users, CheckCircle, FileText, MessageCircle, Video, Gift, ArrowDown, Shield, Star, AlertTriangle } from "lucide-react";
-import medicareExpert from "@/assets/medicare-expert.jpg";
+import brokerHeadshot from "@/assets/broker-headshot.jpg";
 const Index = () => {
   const [showRegistration, setShowRegistration] = useState(false);
   const scrollToForm = () => {
@@ -302,7 +302,7 @@ const Index = () => {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row items-center gap-8">
                   <div className="flex-shrink-0">
-                    <img src={medicareExpert} alt="Michael Smith - Medicare Expert" className="w-32 h-32 rounded-full object-cover shadow-card" />
+                    <img src={brokerHeadshot} alt="Michael Smith - Medicare Expert" className="w-32 h-32 rounded-full object-cover shadow-card" />
                   </div>
                   <div className="text-center md:text-left">
                     <h3 className="text-2xl font-bold mb-2">Michael Smith</h3>

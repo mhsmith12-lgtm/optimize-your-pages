@@ -42,11 +42,7 @@ const Index = () => {
               <span className="block text-3xl md:text-5xl font-normal mt-2">Go from Overwhelmed to Confident</span>
             </h1>
             
-            <div className="bg-warning/20 border border-warning/30 rounded-lg p-4 mb-6 max-w-2xl mx-auto">
-              <p className="text-lg font-semibold text-white">
-                The wrong Medicare plan can cost you thousands — the right one gives you peace of mind in retirement.
-              </p>
-            </div>
+            
             
             <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
               What Most People Get Wrong About Medicare — 

@@ -164,7 +164,7 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <CheckCircle className="w-12 h-12 text-success mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Expert-Led</h3>
-                <p className="text-muted-foreground">Learn from a Medicare broker with 15+ years experience</p>
+                <p className="text-muted-foreground">Learn from a Medicare Broker with 15+ years experience</p>
               </CardContent>
             </Card>
             

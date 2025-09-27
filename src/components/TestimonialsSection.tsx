@@ -44,8 +44,9 @@ export const TestimonialsSection = () => {
             </Card>)}
         </div>
         
-        <div className="text-center mt-8">
-          
+         <div className="text-center mt-8">
+           <p className="text-white text-lg mb-4 font-medium">💬 Ready to feel confident about Medicare — just like they did?</p>
+           
            <Button variant="cta" size="lg">
              <span className="hidden sm:inline">✅ Save My Spot – No Cost, No Sales Pitch</span>
              <span className="sm:hidden">✅ Save My Spot – FREE</span>

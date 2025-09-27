@@ -411,6 +411,27 @@ const Index = () => {
                   The webinar runs for 30-45 minutes. We respect your time and keep things focused and actionable.
                 </AccordionContent>
               </AccordionItem>
+              
+              <AccordionItem value="item-6">
+                <AccordionTrigger>I already signed up for a plan — will this still help me?</AccordionTrigger>
+                <AccordionContent>
+                  Absolutely! Even if you've already enrolled, this workshop will help you understand if you made the best choice and what options you'll have during the next enrollment period. You might discover ways to save money or get better coverage.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-7">
+                <AccordionTrigger>Is this workshop just for seniors turning 65?</AccordionTrigger>
+                <AccordionContent>
+                  Not at all! This workshop is valuable for anyone approaching Medicare age, caregivers helping aging parents, or anyone already on Medicare who wants to better understand their options and ensure they're not overpaying.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-8">
+                <AccordionTrigger>Will you help me figure out which specific plan is best for me?</AccordionTrigger>
+                <AccordionContent>
+                  The workshop provides the education you need to make informed decisions. For personalized plan analysis and recommendations based on your specific health needs and budget, Michael offers free one-on-one consultations after the workshop.
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
           </div>
         </div>

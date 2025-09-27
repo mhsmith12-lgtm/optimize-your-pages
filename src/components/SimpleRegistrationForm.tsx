@@ -16,9 +16,7 @@ export const SimpleRegistrationForm = ({
   return <Card className="w-full max-w-md mx-auto shadow-card border-2 border-primary/20">
       <CardContent className="p-6">
         <div className="space-y-4">
-          <Button onClick={handleClick} variant="cta" size="xl" className="w-full">
-            Save My Seat - It's FREE
-          </Button>
+          <Button onClick={handleClick} variant="cta" size="xl" className="w-full">Save My Spot - It's FREE</Button>
           
           <div className="space-y-2 text-center text-sm text-muted-foreground">
             <div className="flex items-center justify-center gap-2">

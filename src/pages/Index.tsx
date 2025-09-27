@@ -132,15 +132,13 @@ const Index = () => {
       <section id="registration-form" className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Reserve Your Seat Today
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Reserve Your Spot Today</h2>
             <p className="text-lg text-muted-foreground mb-2">
               Totally free. No hidden agenda. Just the clarity you need.
             </p>
             <div className="flex items-center justify-center gap-2 text-warning text-sm font-medium">
               <AlertTriangle className="w-4 h-4" />
-              <span>Seating is limited!</span>
+              <span>Spaces are limited!</span>
             </div>
           </div>
           
@@ -166,7 +164,7 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <CheckCircle className="w-12 h-12 text-success mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Expert-Led</h3>
-                <p className="text-muted-foreground">Learn from a Medicare broker with 10+ years experience</p>
+                <p className="text-muted-foreground">Learn from a Medicare broker with 15+ years experience</p>
               </CardContent>
             </Card>
             
@@ -236,7 +234,7 @@ const Index = () => {
                   <Users className="w-8 h-8 text-cta" />
                 </div>
                 <h3 className="font-semibold mb-2">Which Plan is Right</h3>
-                <p className="text-sm text-muted-foreground">Find the best plan for your situation</p>
+                <p className="text-sm text-muted-foreground">Find the best plan for your specific situation</p>
               </CardContent>
             </Card>
           </div>

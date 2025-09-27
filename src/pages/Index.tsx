@@ -28,9 +28,8 @@ const Index = () => {
       <header className="bg-gradient-hero text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-6">
-              
-              <p className="text-blue-100 text-sm mb-3">Presented by Medicare Educator Michael Smith, who's helped 1,000+ people choose the right plan.</p>
+            <div className="mb-8">
+              <p className="text-blue-100 text-lg mb-4 font-medium">Presented by Medicare Educator Michael Smith, who's helped 1,000+ people choose the right plan.</p>
               <div className="flex items-center justify-center gap-2 text-blue-200 text-sm">
                 <Shield className="w-4 h-4" />
                 <span>Expert-led • No sales pitch • 100% educational</span>

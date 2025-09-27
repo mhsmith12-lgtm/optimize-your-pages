@@ -48,8 +48,8 @@ const Index = () => {
             
             
              <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
-               Most People Choose the Wrong Medicare Plan — 
-               <strong className="text-white">Learn How to Avoid Costly Mistakes and Choose with Confidence</strong>
+               Avoid the Costly Mistakes Most People Make with Medicare — 
+               <strong className="text-white">and Choose the Right Plan with Confidence</strong>
              </p>
             
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8 max-w-2xl mx-auto">

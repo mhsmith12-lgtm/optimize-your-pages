@@ -26,7 +26,7 @@ const Index = () => {
       
       {/* Top Credibility Bar */}
       <div className="bg-primary text-white py-2 text-center">
-        <p className="text-sm font-medium">Presented by Medicare Educator Michael Smith, who's helped 1,000+ people choose the right plan.</p>
+        <p className="text-sm font-medium">Presented by Michael Smith, a licensed Medicare Educator who's helped over 1,000+ individuals seeking clarity and the right coverage.</p>
       </div>
       
       {/* Hero Section */}

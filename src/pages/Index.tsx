@@ -146,11 +146,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Trust Section */}
-      <TrustSection />
-
       {/* Before/After Section */}
       <BeforeAfterSection />
+
+      {/* Trust Section */}
+      <TrustSection />
 
       {/* Why This Workshop is Different */}
       <section className="py-16 bg-background">

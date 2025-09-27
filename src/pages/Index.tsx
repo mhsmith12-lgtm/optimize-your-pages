@@ -457,6 +457,10 @@ const Index = () => {
             </div>
           </div>
           
+          <p className="text-lg mb-6 text-blue-100">
+            There's no cost, no sales pitch, and no pressure — just the clarity you need to make a smart decision.
+          </p>
+          
           <Button onClick={scrollToForm} variant="cta" size="xl" className="w-full md:w-auto min-h-14 text-lg md:text-xl md:px-12 px-[32px]">Save My Spot</Button>
           
           <p className="text-sm mt-4 text-white">

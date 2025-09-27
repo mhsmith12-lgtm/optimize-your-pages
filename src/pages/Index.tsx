@@ -440,9 +440,7 @@ const Index = () => {
             </div>
           </div>
           
-          <Button onClick={scrollToForm} variant="cta" size="xl" className="w-full md:w-auto min-h-14 text-lg md:text-xl px-8 md:px-12">
-            Reserve Your Seat Now - Don't Risk Mistakes
-          </Button>
+          <Button onClick={scrollToForm} variant="cta" size="xl" className="w-full md:w-auto min-h-14 text-lg md:text-xl md:px-12 px-[32px]">Save My Spot</Button>
           
           <p className="text-blue-200 text-sm mt-4">
             We've helped 1,000+ people understand Medicare with confidence

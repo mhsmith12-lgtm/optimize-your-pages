@@ -1,29 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Lock, Users } from "lucide-react";
-
 interface SimpleRegistrationFormProps {
   onRegister?: () => void;
 }
-
-export const SimpleRegistrationForm = ({ onRegister }: SimpleRegistrationFormProps) => {
+export const SimpleRegistrationForm = ({
+  onRegister
+}: SimpleRegistrationFormProps) => {
   const handleClick = () => {
     // This will link to external form
     if (onRegister) {
       onRegister();
     }
   };
-
-  return (
-    <Card className="w-full max-w-md mx-auto shadow-card border-2 border-primary/20">
+  return <Card className="w-full max-w-md mx-auto shadow-card border-2 border-primary/20">
       <CardContent className="p-6">
         <div className="space-y-4">
-          <Button 
-            onClick={handleClick}
-            variant="cta" 
-            size="xl" 
-            className="w-full"
-          >
+          <Button onClick={handleClick} variant="cta" size="xl" className="w-full">
             Save My Seat - It's FREE
           </Button>
           
@@ -37,11 +30,10 @@ export const SimpleRegistrationForm = ({ onRegister }: SimpleRegistrationFormPro
             
             <div className="flex items-center justify-center gap-1 mt-3 text-xs">
               <Users className="w-3 h-3 text-warning" />
-              <span className="text-warning font-medium">Seating is limited</span>
+              <span className="text-warning font-medium">Spots are limited</span>
             </div>
           </div>
         </div>
       </CardContent>
-    </Card>
-  );
+    </Card>;
 };

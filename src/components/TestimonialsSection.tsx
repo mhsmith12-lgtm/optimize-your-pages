@@ -1,12 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
+import beverlyImage from "@/assets/beverly-testimonial.png";
 export const TestimonialsSection = () => {
   const testimonials = [{
-    name: "Dorothy M.",
+    name: "Beverly K.",
     quote: "After my husband passed, I was suddenly making all the decisions on my own. Medicare was the last thing I wanted to deal with, and I was so scared I'd get locked into the wrong plan and have to live with it. Michael never once made me feel rushed or pressured. He patiently explained my choices and even checked in after to make sure I was comfortable. I felt like I had someone on my side instead of a salesperson. That trust meant everything to me.",
     rating: 5,
-    image: "/placeholder-testimonial-1.jpg" // Replace with actual image
+    image: beverlyImage
   }, {
     name: "Robert K.",
     quote: "I retired at 63 and was on COBRA. When I hit 65, I assumed I could just keep it until it ran out. Michael explained how that mistake could have cost me a lifetime penalty. He walked me through exactly when and how to transition from COBRA to Medicare without losing coverage for even a day. I dodged a huge financial bullet thanks to his guidance.",

@@ -8,7 +8,7 @@ import { MobileStickyBar } from "@/components/MobileStickyBar";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
 import { TrustSection } from "@/components/TrustSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
-import { Clock, Users, CheckCircle, FileText, MessageCircle, Video, Gift, ArrowDown, Shield, Star, AlertTriangle } from "lucide-react";
+import { Clock, Users, CheckCircle, FileText, MessageCircle, Video, Gift, ArrowDown, Shield, Star, AlertTriangle, Check } from "lucide-react";
 import brokerHeadshot from "@/assets/broker-headshot.jpg";
 const Index = () => {
   const [showRegistration, setShowRegistration] = useState(false);
@@ -460,6 +460,13 @@ const Index = () => {
           <p className="text-lg mb-6 text-blue-100">
             There's no cost, no sales pitch, and no pressure — just the clarity you need to make a smart decision.
           </p>
+          
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <div className="bg-green-500 rounded-full p-1">
+              <Check className="w-4 h-4 text-white" />
+            </div>
+            <span className="text-white font-medium">Zero Sales Pitch Promise</span>
+          </div>
           
           <Button onClick={scrollToForm} variant="cta" size="xl" className="w-full md:w-auto min-h-14 text-lg md:text-xl md:px-12 px-[32px]">Save My Spot</Button>
           

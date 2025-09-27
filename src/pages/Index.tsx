@@ -1,12 +1,452 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { RegistrationForm } from "@/components/RegistrationForm";
+import { StickyCtaButton } from "@/components/StickyCtaButton";
+import { BeforeAfterSection } from "@/components/BeforeAfterSection";
+import { TrustSection } from "@/components/TrustSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { Clock, Users, CheckCircle, FileText, MessageCircle, Video, Gift, ArrowDown, Shield, Star, AlertTriangle } from "lucide-react";
+import medicareExpert from "@/assets/medicare-expert.jpg";
 
 const Index = () => {
+  const [showRegistration, setShowRegistration] = useState(false);
+
+  const scrollToForm = () => {
+    const formElement = document.getElementById('registration-form');
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <StickyCtaButton onClick={scrollToForm} />
+      
+      {/* Hero Section */}
+      <header className="bg-gradient-hero text-white py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <p className="text-blue-100 text-sm font-medium mb-2">Presented by Medicare Advisors USA</p>
+              <div className="flex items-center justify-center gap-2 text-blue-200 text-sm">
+                <Shield className="w-4 h-4" />
+                <span>Expert-led • No sales pitch • 100% educational</span>
+              </div>
+            </div>
+            
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              MEDICARE BREAKDOWN:
+              <span className="block text-3xl md:text-5xl font-normal mt-2">Medicare Made Simple</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+              Don't get stuck with the wrong Medicare plan — 
+              <strong className="text-white"> avoid costly mistakes before choosing a plan</strong>
+            </p>
+            
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8 max-w-2xl mx-auto">
+              <h2 className="text-lg font-semibold mb-4">You're Not Alone — 1000s Confused by Medicare</h2>
+              <p className="text-blue-100 mb-4">Learn How to Choose with Confidence</p>
+              <Button 
+                onClick={scrollToForm}
+                variant="cta" 
+                size="xl" 
+                className="w-full md:w-auto"
+              >
+                Save My Seat - It's FREE
+                <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
+              </Button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto text-sm">
+              <div className="flex items-center justify-center gap-2">
+                <Clock className="w-4 h-4" />
+                <span>60-minute workshop</span>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                <Users className="w-4 h-4" />
+                <span>Limited to 50 people</span>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                <Video className="w-4 h-4" />
+                <span>Join from home</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Quick FAQ Above Form */}
+      <section className="py-8 bg-muted/50">
+        <div className="container mx-auto px-4 max-w-2xl">
+          <div className="text-center mb-6">
+            <h3 className="text-lg font-semibold mb-2">Still have questions?</h3>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4 text-sm">
+            <div className="bg-white p-4 rounded-lg shadow-card">
+              <strong>Q: Is this a sales pitch?</strong>
+              <p className="text-muted-foreground mt-1">A: Nope. 100% educational. No strings attached.</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-card">
+              <strong>Q: What happens after I register?</strong>
+              <p className="text-muted-foreground mt-1">A: You'll get an email confirmation with the workshop link + reminders.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Registration Form */}
+      <section id="registration-form" className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Reserve Your Seat Today
+            </h2>
+            <p className="text-lg text-muted-foreground mb-2">
+              Totally free. No hidden agenda. Just the clarity you need.
+            </p>
+            <div className="flex items-center justify-center gap-2 text-warning text-sm font-medium">
+              <AlertTriangle className="w-4 h-4" />
+              <span>Only 12 spots left for this week's session!</span>
+            </div>
+          </div>
+          
+          <RegistrationForm />
+        </div>
+      </section>
+
+      {/* Trust Section */}
+      <TrustSection />
+
+      {/* Before/After Section */}
+      <BeforeAfterSection />
+
+      {/* Why This Workshop is Different */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            How This Workshop is Different
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <Card className="border-2 border-success/20 bg-success/5">
+              <CardContent className="p-6 text-center">
+                <CheckCircle className="w-12 h-12 text-success mx-auto mb-4" />
+                <h3 className="text-lg font-semibold mb-2">Expert-Led</h3>
+                <p className="text-muted-foreground">Learn from a Medicare specialist with 10+ years experience</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-2 border-primary/20 bg-primary/5">
+              <CardContent className="p-6 text-center">
+                <Shield className="w-12 h-12 text-primary mx-auto mb-4" />
+                <h3 className="text-lg font-semibold mb-2">No Sales Pitch</h3>
+                <p className="text-muted-foreground">Pure education — we're here to help, not sell</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-2 border-warning/20 bg-warning/5">
+              <CardContent className="p-6 text-center">
+                <Star className="w-12 h-12 text-warning mx-auto mb-4" />
+                <h3 className="text-lg font-semibold mb-2">Real Answers</h3>
+                <p className="text-muted-foreground">Not just surface-level info — get the details that matter</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* What You Will Learn */}
+      <section className="py-16 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            What You Will Learn About
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">
+            Covers everything you need to choose the right Medicare plan with confidence
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <Card className="bg-white shadow-card">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <FileText className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-2">Medicare Parts A, B, C & D</h3>
+                <p className="text-sm text-muted-foreground">Understand what each part covers and costs</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white shadow-card">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-success" />
+                </div>
+                <h3 className="font-semibold mb-2">Avoid Common Mistakes</h3>
+                <p className="text-sm text-muted-foreground">Learn the top 5 costly errors people make</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white shadow-card">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-8 h-8 text-warning" />
+                </div>
+                <h3 className="font-semibold mb-2">Enrollment Periods</h3>
+                <p className="text-sm text-muted-foreground">Know exactly when to sign up</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white shadow-card">
+              <CardContent className="p-6 text-center">
+                <div className="w-16 h-16 bg-cta/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-cta" />
+                </div>
+                <h3 className="font-semibold mb-2">Which Plan is Right</h3>
+                <p className="text-sm text-muted-foreground">Find the best plan for your situation</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* What You Get When You Register */}
+      <section className="py-16 bg-primary/5">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            What You Get When You Register
+          </h2>
+          
+          <div className="max-w-3xl mx-auto">
+            <div className="grid gap-6">
+              <Card className="bg-white shadow-card">
+                <CardContent className="p-6 flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Video className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">Live 60-Minute Workshop</h3>
+                    <p className="text-muted-foreground">Interactive session with live Q&A and expert guidance</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white shadow-card">
+                <CardContent className="p-6 flex items-start gap-4">
+                  <div className="w-12 h-12 bg-success/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Gift className="w-6 h-6 text-success" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">Free Medicare Guide (PDF)</h3>
+                    <p className="text-muted-foreground">Downloadable reference guide you can keep forever</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white shadow-card">
+                <CardContent className="p-6 flex items-start gap-4">
+                  <div className="w-12 h-12 bg-warning/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <MessageCircle className="w-6 h-6 text-warning" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2">Expert Q&A Session</h3>
+                    <p className="text-muted-foreground">Get your specific questions answered by our Medicare expert</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Your Expert */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              Meet Your Medicare Expert
+            </h2>
+            
+            <Card className="bg-white shadow-card">
+              <CardContent className="p-8">
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="flex-shrink-0">
+                    <img 
+                      src={medicareExpert} 
+                      alt="Michael Smith - Medicare Expert" 
+                      className="w-32 h-32 rounded-full object-cover shadow-card"
+                    />
+                  </div>
+                  <div className="text-center md:text-left">
+                    <h3 className="text-2xl font-bold mb-2">Michael Smith</h3>
+                    <p className="text-primary font-semibold mb-4">Licensed Medicare Specialist</p>
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      With over 10 years of experience helping thousands of people navigate Medicare, 
+                      Michael has simplified the complex world of Medicare into easy-to-understand guidance. 
+                      He's dedicated to ensuring you make the right choice for your health and budget.
+                    </p>
+                    <div className="flex items-center justify-center md:justify-start gap-4 text-sm text-muted-foreground">
+                      <span>📜 Licensed Professional</span>
+                      <span>👥 Helped 1,000+ Clients</span>
+                      <span>⭐ 4.9/5 Rating</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <TestimonialsSection />
+
+      {/* Step-by-Step Process */}
+      <section className="py-16 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            What Happens After You Register?
+          </h2>
+          
+          <div className="max-w-3xl mx-auto">
+            <div className="grid gap-6">
+              {[
+                { step: 1, title: "Register", description: "Fill out the simple form above to secure your spot" },
+                { step: 2, title: "Get Confirmation", description: "Receive an email with your workshop link and calendar reminder" },
+                { step: 3, title: "Join the Workshop", description: "Attend from your phone or computer - no software needed" },
+                { step: 4, title: "Leave with Clarity", description: "Walk away confident with a plan you trust and understand" }
+              ].map((item, index) => (
+                <Card key={index} className="bg-white shadow-card">
+                  <CardContent className="p-6 flex items-center gap-4">
+                    <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
+                      {item.step}
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
+                      <p className="text-muted-foreground">{item.description}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            Got Questions? We've Got Answers
+          </h2>
+          <p className="text-center text-muted-foreground mb-12">
+            Everything you need to know about attending this workshop
+          </p>
+          
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>Is this really free?</AccordionTrigger>
+                <AccordionContent>
+                  Yes, absolutely free. No hidden costs, no surprise charges. We believe everyone deserves clear Medicare guidance.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-2">
+                <AccordionTrigger>Is this a sales presentation?</AccordionTrigger>
+                <AccordionContent>
+                  Not at all. This is 100% educational content designed to help you understand Medicare better. No products will be sold during the workshop.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-3">
+                <AccordionTrigger>Will you help me choose a specific plan?</AccordionTrigger>
+                <AccordionContent>
+                  The workshop focuses on education so you can make informed decisions. For personalized plan recommendations, you can schedule a free consultation after the workshop.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-4">
+                <AccordionTrigger>What if I'm already retired?</AccordionTrigger>
+                <AccordionContent>
+                  Perfect! This workshop is ideal for anyone approaching or already in retirement. You'll learn about Medicare timing, coverage options, and how to optimize your benefits.
+                </AccordionContent>
+              </AccordionItem>
+              
+              <AccordionItem value="item-5">
+                <AccordionTrigger>How long is the workshop?</AccordionTrigger>
+                <AccordionContent>
+                  The workshop runs for 60 minutes, including time for Q&A. We respect your time and keep things focused and actionable.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="py-16 bg-gradient-primary text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Don't Wait - Secure Your Medicare Future Today
+          </h2>
+          <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+            Every year you wait could cost you $3,000+ in premiums. 
+            Register now to guarantee your seat.
+          </p>
+          
+          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-8 max-w-md mx-auto mb-8">
+            <h3 className="text-lg font-semibold mb-4">The Cost of Waiting</h3>
+            <div className="space-y-2 text-blue-100">
+              <p><strong className="text-white">$3,000+</strong> - Average yearly overspend on wrong plan</p>
+              <p><strong className="text-white">10%</strong> - Annual penalty for late enrollment</p>
+              <p><strong className="text-white">1 Year</strong> - How long you're stuck with wrong plan</p>
+            </div>
+          </div>
+          
+          <Button 
+            onClick={scrollToForm}
+            variant="cta" 
+            size="xl"
+            className="bg-white text-primary hover:bg-white/90"
+          >
+            Reserve Your Seat Now - Don't Risk Mistakes
+          </Button>
+          
+          <p className="text-blue-200 text-sm mt-4">
+            We've helped 1,000+ people understand Medicare with confidence
+          </p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="container mx-auto px-4 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mb-6">
+            <div className="flex flex-col items-center">
+              <FileText className="w-6 h-6 mb-2" />
+              <span className="text-xs">Expert Content</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <Users className="w-6 h-6 mb-2" />
+              <span className="text-xs">Trusted by 1000+</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <Video className="w-6 h-6 mb-2" />
+              <span className="text-xs">Live Workshop</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <Shield className="w-6 h-6 mb-2" />
+              <span className="text-xs">Licensed Expert</span>
+            </div>
+          </div>
+          <p className="text-gray-400 text-sm">
+            © 2024 Medicare Advisors USA. All rights reserved. | Privacy Policy | Terms of Service
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

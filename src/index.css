@@ -2,41 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Medicare Landing Page Design System - Professional, Trustworthy, Conversion-Focused */
 
 @layer base {
   :root {
+    /* Trust-focused color palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 217 33% 17%;
 
+    /* Card and surface colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 217 33% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 217 33% 17%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary Medicare blue - trustworthy and professional */
+    --primary: 217 100% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 217 100% 40%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary accent blue */
+    --secondary: 217 25% 95%;
+    --secondary-foreground: 217 33% 17%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted backgrounds */
+    --muted: 217 15% 96%;
+    --muted-foreground: 217 13% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent colors */
+    --accent: 217 25% 95%;
+    --accent-foreground: 217 33% 17%;
 
+    /* Action orange for CTAs */
+    --cta: 25 95% 53%;
+    --cta-foreground: 0 0% 100%;
+    --cta-hover: 25 95% 48%;
+
+    /* Success and trust indicators */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning and urgency */
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Destructive */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs */
+    --border: 217 20% 84%;
+    --input: 217 20% 84%;
+    --ring: 217 100% 45%;
 
-    --radius: 0.5rem;
+    /* Layout */
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 100% 45%), hsl(217 100% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 100% 45%) 0%, hsl(217 95% 50%) 50%, hsl(217 90% 55%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 95% 58%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(217 100% 45% / 0.1), 0 2px 4px -1px hsl(217 100% 45% / 0.06);
+    --shadow-cta: 0 10px 25px -3px hsl(25 95% 53% / 0.3), 0 4px 6px -2px hsl(25 95% 53% / 0.05);
+    --shadow-float: 0 20px 25px -5px hsl(217 100% 45% / 0.1), 0 10px 10px -5px hsl(217 100% 45% / 0.04);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 

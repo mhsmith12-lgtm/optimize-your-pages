@@ -47,8 +47,8 @@ const Index = () => {
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8 max-w-2xl mx-auto">
-              <h2 className="text-lg font-semibold mb-4">Medicare Doesn't Have<br />To Be Confusing</h2>
-              <p className="text-blue-100 mb-4">Finally feel confident about your Medicare choices — without the overwhelm, jargon, or sales pressure.</p>
+              <h2 className="text-lg font-semibold mb-4 text-[#fafefa]">Medicare Doesn't Have<br />To Be Confusing</h2>
+              <p className="mb-4 text-white">Finally feel confident about your Medicare choices — without the overwhelm, jargon, or sales pressure.</p>
               <Button onClick={scrollToForm} variant="cta" size="xl" className="w-full md:w-auto">
                 Save My Seat - It's FREE
                 <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
@@ -424,7 +424,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Don't Wait - Secure Your Medicare Future Today
           </h2>
-          <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-white">
             Every year you wait could cost you $3,000+ in premiums. 
             Register now to guarantee your seat.
           </p>
@@ -432,15 +432,15 @@ const Index = () => {
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-8 max-w-md mx-auto mb-8">
             <h3 className="text-lg font-semibold mb-4">The Cost of Waiting</h3>
             <div className="space-y-2 text-blue-100">
-              <p><strong className="text-white">$3,000+</strong> - Average yearly overspend on wrong plan</p>
-              <p><strong className="text-white">10%</strong> - Annual penalty for late enrollment</p>
-              <p><strong className="text-white">1 Year</strong> - How long you're stuck with wrong plan</p>
+              <p className="text-white"><strong className="text-white">$3,000+</strong> - Average yearly overspend on wrong plan</p>
+              <p className="text-white"><strong className="text-white">10%</strong> - Annual penalty for late enrollment</p>
+              <p className="text-white"><strong className="text-white">1 Year</strong> - How long you're stuck with wrong plan</p>
             </div>
           </div>
           
           <Button onClick={scrollToForm} variant="cta" size="xl" className="w-full md:w-auto min-h-14 text-lg md:text-xl md:px-12 px-[32px]">Save My Spot</Button>
           
-          <p className="text-blue-200 text-sm mt-4">
+          <p className="text-sm mt-4 text-white">
             We've helped 1,000+ people understand Medicare with confidence
           </p>
         </div>

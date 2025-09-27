@@ -20,10 +20,10 @@ export const TestimonialsSection = () => {
   }];
   return <section className="py-16 bg-gradient-primary text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
           Our Clients Are Saying...
         </h2>
-        <p className="text-center text-blue-100 mb-12 text-lg">
+        <p className="text-center mb-12 text-lg text-white">
           Real feedback from people who attended this workshop
         </p>
         

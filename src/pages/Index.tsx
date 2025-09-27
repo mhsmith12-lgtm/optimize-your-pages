@@ -10,19 +10,17 @@ import { TrustSection } from "@/components/TrustSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { Clock, Users, CheckCircle, FileText, MessageCircle, Video, Gift, ArrowDown, Shield, Star, AlertTriangle } from "lucide-react";
 import medicareExpert from "@/assets/medicare-expert.jpg";
-
 const Index = () => {
   const [showRegistration, setShowRegistration] = useState(false);
-
   const scrollToForm = () => {
     const formElement = document.getElementById('registration-form');
     if (formElement) {
-      formElement.scrollIntoView({ behavior: 'smooth' });
+      formElement.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <StickyCtaButton onClick={scrollToForm} />
       <MobileStickyBar onClick={scrollToForm} />
       
@@ -49,14 +47,9 @@ const Index = () => {
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8 max-w-2xl mx-auto">
-              <h2 className="text-lg font-semibold mb-4">Medicare Doesn't Have<br/>To Be Confusing</h2>
+              <h2 className="text-lg font-semibold mb-4">Medicare Doesn't Have<br />To Be Confusing</h2>
               <p className="text-blue-100 mb-4">Finally feel confident about your Medicare choices — without the overwhelm, jargon, or sales pressure.</p>
-              <Button 
-                onClick={scrollToForm}
-                variant="cta" 
-                size="xl" 
-                className="w-full md:w-auto"
-              >
+              <Button onClick={scrollToForm} variant="cta" size="xl" className="w-full md:w-auto">
                 Save My Seat - It's FREE
                 <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
               </Button>
@@ -104,7 +97,8 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-xl mx-auto text-sm">
               <div className="flex items-center justify-center gap-2">
                 <Users className="w-4 h-4" />
-                <span>Seating is limited</span>
+                <span>Spots are limited
+              </span>
               </div>
               <div className="flex items-center justify-center gap-2">
                 <Video className="w-4 h-4" />
@@ -310,11 +304,7 @@ const Index = () => {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row items-center gap-8">
                   <div className="flex-shrink-0">
-                    <img 
-                      src={medicareExpert} 
-                      alt="Michael Smith - Medicare Expert" 
-                      className="w-32 h-32 rounded-full object-cover shadow-card"
-                    />
+                    <img src={medicareExpert} alt="Michael Smith - Medicare Expert" className="w-32 h-32 rounded-full object-cover shadow-card" />
                   </div>
                   <div className="text-center md:text-left">
                     <h3 className="text-2xl font-bold mb-2">Michael Smith</h3>
@@ -347,13 +337,23 @@ const Index = () => {
           
           <div className="max-w-3xl mx-auto">
             <div className="grid gap-6">
-              {[
-                { step: 1, title: "Register", description: "Fill out the simple form above to secure your spot" },
-                { step: 2, title: "Get Confirmation", description: "Receive an email with your workshop link and calendar reminder" },
-                { step: 3, title: "Join the Workshop", description: "Attend from your phone or computer - no software needed" },
-                { step: 4, title: "Leave with Clarity", description: "Walk away confident with a plan you trust and understand" }
-              ].map((item, index) => (
-                <Card key={index} className="bg-white shadow-card">
+              {[{
+              step: 1,
+              title: "Register",
+              description: "Fill out the simple form above to secure your spot"
+            }, {
+              step: 2,
+              title: "Get Confirmation",
+              description: "Receive an email with your workshop link and calendar reminder"
+            }, {
+              step: 3,
+              title: "Join the Workshop",
+              description: "Attend from your phone or computer - no software needed"
+            }, {
+              step: 4,
+              title: "Leave with Clarity",
+              description: "Walk away confident with a plan you trust and understand"
+            }].map((item, index) => <Card key={index} className="bg-white shadow-card">
                   <CardContent className="p-6 flex items-center gap-4">
                     <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
                       {item.step}
@@ -363,8 +363,7 @@ const Index = () => {
                       <p className="text-muted-foreground">{item.description}</p>
                     </div>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
@@ -441,12 +440,7 @@ const Index = () => {
             </div>
           </div>
           
-          <Button 
-            onClick={scrollToForm}
-            variant="cta" 
-            size="xl"
-            className="w-full md:w-auto min-h-14 text-lg md:text-xl px-8 md:px-12"
-          >
+          <Button onClick={scrollToForm} variant="cta" size="xl" className="w-full md:w-auto min-h-14 text-lg md:text-xl px-8 md:px-12">
             Reserve Your Seat Now - Don't Risk Mistakes
           </Button>
           
@@ -482,8 +476,6 @@ const Index = () => {
           </p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;

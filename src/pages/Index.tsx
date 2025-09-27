@@ -49,8 +49,8 @@ const Index = () => {
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8 max-w-2xl mx-auto">
-              <h2 className="text-lg font-semibold mb-4">Medicare Doesn't Have to Be Confusing — Learn How to Make the Right Choice with Confidence</h2>
-              <p className="text-blue-100 mb-4">Join 1,000+ people turning 65 who've used this free workshop to avoid costly mistakes and feel confident about their Medicare choices.</p>
+              <h2 className="text-lg font-semibold mb-4">Medicare Doesn't Have<br/>To Be Confusing</h2>
+              <p className="text-blue-100 mb-4">Finally feel confident about your Medicare choices — without the overwhelm, jargon, or sales pressure.</p>
               <Button 
                 onClick={scrollToForm}
                 variant="cta" 
@@ -225,7 +225,7 @@ const Index = () => {
                     <Video className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">30-45 Minute Webinar</h3>
+                    <h3 className="font-semibold text-lg mb-2">30 Minute Webinar</h3>
                     <p className="text-muted-foreground">Comprehensive session with expert guidance</p>
                   </div>
                 </CardContent>
@@ -237,8 +237,8 @@ const Index = () => {
                     <Gift className="w-6 h-6 text-success" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Free Medicare Guide (PDF)</h3>
-                    <p className="text-muted-foreground">Downloadable reference guide you can keep forever</p>
+                    <h3 className="font-semibold text-lg mb-2">Free "My Medicare Roadmap" (PDF)</h3>
+                    <p className="text-muted-foreground">Downloadable reference guide you can keep forever to help you stay on track</p>
                   </div>
                 </CardContent>
               </Card>
@@ -281,9 +281,7 @@ const Index = () => {
                     <h3 className="text-2xl font-bold mb-2">Michael Smith</h3>
                     <p className="text-primary font-semibold mb-4">Licensed Medicare Broker</p>
                     <p className="text-muted-foreground leading-relaxed mb-4">
-                      With over 10 years of experience helping thousands of people navigate Medicare, 
-                      Michael has simplified the complex world of Medicare into easy-to-understand guidance. 
-                      He's dedicated to ensuring you make the right choice for your health and budget.
+                      Michael is a dedicated educator and public speaker. With over a decade of experience in simplifying Medicare decisions, he is passionate about assisting individuals in navigating the complexities of Medicare. Michael has successfully guided over 1,000's of people through the Medicare process—now it's your turn...
                     </p>
                     <div className="flex items-center justify-center md:justify-start gap-4 text-sm text-muted-foreground">
                       <span>📜 Licensed Professional</span>
@@ -441,7 +439,7 @@ const Index = () => {
             </div>
           </div>
           <p className="text-gray-400 text-sm">
-            © 2024 Medicare Advisors USA. All rights reserved. | Privacy Policy | Terms of Service
+            © 2025 Guardian Health & Wealth. All rights reserved. | Privacy Policy | Terms of Service
           </p>
         </div>
       </footer>

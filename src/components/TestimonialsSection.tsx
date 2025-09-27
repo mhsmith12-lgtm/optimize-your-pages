@@ -66,7 +66,6 @@ export const TestimonialsSection = () => {
           <Button 
             variant="cta" 
             size="lg"
-            className="bg-white text-primary hover:bg-white/90"
           >
             Save My Seat - It's FREE
           </Button>

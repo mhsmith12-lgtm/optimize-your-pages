@@ -1,9 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Users, Award, Heart } from "lucide-react";
-
 export const TrustSection = () => {
-  return (
-    <section className="py-12 bg-primary/5">
+  return <section className="py-12 bg-primary/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h3 className="text-lg font-semibold text-primary mb-2">Trusted by 1,000+ People</h3>
@@ -31,7 +29,7 @@ export const TrustSection = () => {
             <CardContent className="p-4 text-center">
               <Award className="w-8 h-8 text-warning mx-auto mb-2" />
               <div className="text-sm font-medium">Expert Led</div>
-              <div className="text-xs text-muted-foreground">Medicare Specialist</div>
+              <div className="text-xs text-muted-foreground">Medicare Advisor</div>
             </CardContent>
           </Card>
           
@@ -44,6 +42,5 @@ export const TrustSection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

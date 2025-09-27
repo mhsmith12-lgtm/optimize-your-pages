@@ -42,8 +42,8 @@ const Index = () => {
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
-              Don't get stuck with the wrong Medicare plan — 
-              <strong className="text-white"> avoid costly mistakes before choosing a plan</strong>
+              What Most People Get Wrong About Medicare — 
+              <strong className="text-white"> and How to Avoid Their Mistakes</strong>
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8 max-w-2xl mx-auto">

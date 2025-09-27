@@ -138,7 +138,7 @@ const Index = () => {
             </p>
             <div className="flex items-center justify-center gap-2 text-warning text-sm font-medium">
               <AlertTriangle className="w-4 h-4" />
-              <span>Spaces are limited!</span>
+              <span>Spots are limited!</span>
             </div>
           </div>
           

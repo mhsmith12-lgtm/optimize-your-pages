@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import beverlyImage from "@/assets/beverly-testimonial.png";
 import robertImage from "@/assets/robert-testimonial.png";
+import susanImage from "@/assets/susan-testimonial.png";
 export const TestimonialsSection = () => {
   const testimonials = [{
     name: "Beverly K.",
@@ -18,7 +19,7 @@ export const TestimonialsSection = () => {
     name: "Susan L.",
     quote: "I'm a researcher by nature, so when I turned 65, I thought I'd be fine if I just read enough. I had piles of Medicare brochures, government websites bookmarked, and still felt like I was drowning in acronyms and fine print. Michael broke it all down in plain English. Within 20 minutes, I finally understood the two Medicare paths and which one actually fit my health needs and budget. He didn't push me—he gave me clarity. Now I feel confident in my choice, and I actually sleep at night knowing I didn't make a costly mistake.",
     rating: 5,
-    image: "/placeholder-testimonial-3.jpg" // Replace with actual image
+    image: susanImage
   }];
   return <section className="py-16 bg-gradient-primary text-white">
       <div className="container mx-auto px-4">

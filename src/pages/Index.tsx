@@ -436,7 +436,7 @@ const Index = () => {
               <AccordionItem value="item-8">
                 <AccordionTrigger>Will you help me figure out which specific plan is best for me?</AccordionTrigger>
                 <AccordionContent>
-                  The workshop provides the education you need to make informed decisions. For personalized plan analysis and recommendations based on your specific health needs and budget, Michael offers free one-on-one consultations after the workshop.
+                  The workshop provides the education you need to make informed decisions. For personalized plan analysis and recommendations based on your specific health needs and budget, Michael and the other experts on his team offer FREE one-on-one consultations after the workshop.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

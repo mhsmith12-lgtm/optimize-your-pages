@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 import beverlyImage from "@/assets/beverly-testimonial.png";
+import robertImage from "@/assets/robert-testimonial.png";
 export const TestimonialsSection = () => {
   const testimonials = [{
     name: "Beverly K.",
@@ -12,7 +13,7 @@ export const TestimonialsSection = () => {
     name: "Robert K.",
     quote: "I retired at 63 and was on COBRA. When I hit 65, I assumed I could just keep it until it ran out. Michael explained how that mistake could have cost me a lifetime penalty. He walked me through exactly when and how to transition from COBRA to Medicare without losing coverage for even a day. I dodged a huge financial bullet thanks to his guidance.",
     rating: 5,
-    image: "/placeholder-testimonial-2.jpg" // Replace with actual image
+    image: robertImage
   }, {
     name: "Susan L.",
     quote: "I'm a researcher by nature, so when I turned 65, I thought I'd be fine if I just read enough. I had piles of Medicare brochures, government websites bookmarked, and still felt like I was drowning in acronyms and fine print. Michael broke it all down in plain English. Within 20 minutes, I finally understood the two Medicare paths and which one actually fit my health needs and budget. He didn't push me—he gave me clarity. Now I feel confident in my choice, and I actually sleep at night knowing I didn't make a costly mistake.",

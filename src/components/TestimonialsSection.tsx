@@ -4,17 +4,17 @@ import { Star } from "lucide-react";
 export const TestimonialsSection = () => {
   const testimonials = [{
     name: "Dorothy M.",
-    quote: "This webinar saved me from making a $3,000 mistake! Michael explained everything so clearly.",
+    quote: "After my husband passed, I was suddenly making all the decisions on my own. Medicare was the last thing I wanted to deal with, and I was so scared I'd get locked into the wrong plan and have to live with it. Michael never once made me feel rushed or pressured. He patiently explained my choices and even checked in after to make sure I was comfortable. I felt like I had someone on my side instead of a salesperson. That trust meant everything to me.",
     rating: 5,
     image: "/placeholder-testimonial-1.jpg" // Replace with actual image
   }, {
     name: "Robert K.",
-    quote: "I was completely lost with Medicare until I attended this webinar. Now I feel confident about my choice.",
+    quote: "I retired at 63 and was on COBRA. When I hit 65, I assumed I could just keep it until it ran out. Michael explained how that mistake could have cost me a lifetime penalty. He walked me through exactly when and how to transition from COBRA to Medicare without losing coverage for even a day. I dodged a huge financial bullet thanks to his guidance.",
     rating: 5,
     image: "/placeholder-testimonial-2.jpg" // Replace with actual image
   }, {
     name: "Susan L.",
-    quote: "No pressure, just helpful information. I finally understand what Medicare covers and what it doesn't.",
+    quote: "I'm a researcher by nature, so when I turned 65, I thought I'd be fine if I just read enough. I had piles of Medicare brochures, government websites bookmarked, and still felt like I was drowning in acronyms and fine print. Michael broke it all down in plain English. Within 20 minutes, I finally understood the two Medicare paths and which one actually fit my health needs and budget. He didn't push me—he gave me clarity. Now I feel confident in my choice, and I actually sleep at night knowing I didn't make a costly mistake.",
     rating: 5,
     image: "/placeholder-testimonial-3.jpg" // Replace with actual image
   }];

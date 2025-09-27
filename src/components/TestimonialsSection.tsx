@@ -46,7 +46,10 @@ export const TestimonialsSection = () => {
         
         <div className="text-center mt-8">
           
-          <Button variant="cta" size="lg">✅ Save My Spot – No Cost, No Sales Pitch</Button>
+           <Button variant="cta" size="lg">
+             <span className="hidden sm:inline">✅ Save My Spot – No Cost, No Sales Pitch</span>
+             <span className="sm:hidden">✅ Save My Spot – FREE</span>
+           </Button>
           <p className="text-blue-100 text-sm mt-4">
             1,000+ people have already attended this workshop — and left with clarity, not confusion.
           </p>

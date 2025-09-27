@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
-import beverlyImage from "@/assets/beverly-testimonial.png";
+import beverlyImage from "@/assets/beverly-testimonial.jpg";
 export const TestimonialsSection = () => {
   const testimonials = [{
     name: "Beverly K.",

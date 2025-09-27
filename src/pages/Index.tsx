@@ -48,7 +48,20 @@ const Index = () => {
               <strong className="text-white"> avoid costly mistakes before choosing a plan</strong>
             </p>
             
-            
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8 max-w-2xl mx-auto">
+              <h2 className="text-lg font-semibold mb-4">Medicare Doesn't Have<br/>To Be Confusing</h2>
+              <p className="text-blue-100 mb-4">Finally feel confident about your Medicare choices — without the overwhelm, jargon, or sales pressure.</p>
+              <Button 
+                onClick={scrollToForm}
+                variant="cta" 
+                size="xl" 
+                className="w-full md:w-auto"
+              >
+                Save My Seat - It's FREE
+                <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
+              </Button>
+            </div>
+
             {/* Session Selection */}
             <div className="bg-gradient-to-r from-primary/20 to-primary/10 backdrop-blur-sm border border-primary/30 rounded-lg p-6 mb-6 max-w-4xl mx-auto">
               <h3 className="text-xl font-bold text-center mb-6 text-white">
@@ -86,20 +99,6 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8 max-w-2xl mx-auto">
-              <h2 className="text-lg font-semibold mb-4">Medicare Doesn't Have<br/>To Be Confusing</h2>
-              <p className="text-blue-100 mb-4">Finally feel confident about your Medicare choices — without the overwhelm, jargon, or sales pressure.</p>
-              <Button 
-                onClick={scrollToForm}
-                variant="cta" 
-                size="xl" 
-                className="w-full md:w-auto"
-              >
-                Save My Seat - It's FREE
-                <ArrowDown className="w-5 h-5 ml-2 animate-bounce" />
-              </Button>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-xl mx-auto text-sm">

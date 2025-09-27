@@ -8,7 +8,7 @@ import { MobileStickyBar } from "@/components/MobileStickyBar";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
 import { TrustSection } from "@/components/TrustSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
-import { Clock, Users, CheckCircle, FileText, MessageCircle, Video, Gift, ArrowDown, Shield, Star, AlertTriangle, Check } from "lucide-react";
+import { CalendarDays, Users, CheckCircle, FileText, MessageCircle, Video, Gift, ArrowDown, Shield, Star, AlertTriangle, Check } from "lucide-react";
 import brokerHeadshot from "@/assets/broker-headshot.jpg";
 const Index = () => {
   const [showRegistration, setShowRegistration] = useState(false);
@@ -228,7 +228,7 @@ const Index = () => {
             <Card className="bg-white shadow-card">
               <CardContent className="p-6 text-center">
                 <div className="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-8 h-8 text-warning" />
+                  <CalendarDays className="w-8 h-8 text-warning" />
                 </div>
                 <h3 className="font-semibold mb-2">Enrollment Periods</h3>
                 <p className="text-sm text-muted-foreground">Know exactly when to sign up</p>
